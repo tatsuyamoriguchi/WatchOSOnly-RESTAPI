@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C44B3142514A8AE00B0BB1D /* CountriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C44B3132514A8AE00B0BB1D /* CountriesData.swift */; };
 		8C4A8EA5251496BA00292028 /* WatchOSOnly-RESTAPI WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8C4A8EA4251496BA00292028 /* WatchOSOnly-RESTAPI WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8C4A8EAB251496BA00292028 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4A8EA9251496BA00292028 /* Interface.storyboard */; };
 		8C4A8EAD251496BC00292028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4A8EAC251496BC00292028 /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 		8C4A8EBB251496BD00292028 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4A8EBA251496BD00292028 /* ExtensionDelegate.swift */; };
 		8C4A8EBD251496BD00292028 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4A8EBC251496BD00292028 /* NotificationController.swift */; };
 		8C4A8EBF251496BD00292028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4A8EBE251496BD00292028 /* Assets.xcassets */; };
+		8C4A8ED225149D6B00292028 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4A8ED125149D6B00292028 /* GlobalData.swift */; };
+		8C4A8ED425149DEA00292028 /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4A8ED325149DEA00292028 /* Convert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C44B3132514A8AE00B0BB1D /* CountriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesData.swift; sourceTree = "<group>"; };
 		8C4A8EA0251496BA00292028 /* WatchOSOnly-RESTAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchOSOnly-RESTAPI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4A8EA4251496BA00292028 /* WatchOSOnly-RESTAPI WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchOSOnly-RESTAPI WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4A8EAA251496BA00292028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 		8C4A8EBE251496BD00292028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C4A8EC0251496BD00292028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C4A8EC1251496BD00292028 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8C4A8ED125149D6B00292028 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
+		8C4A8ED325149DEA00292028 /* Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,9 @@
 				8C4A8EBE251496BD00292028 /* Assets.xcassets */,
 				8C4A8EC0251496BD00292028 /* Info.plist */,
 				8C4A8EC1251496BD00292028 /* PushNotificationPayload.apns */,
+				8C4A8ED125149D6B00292028 /* GlobalData.swift */,
+				8C4A8ED325149DEA00292028 /* Convert.swift */,
+				8C44B3132514A8AE00B0BB1D /* CountriesData.swift */,
 			);
 			path = "WatchOSOnly-RESTAPI WatchKit Extension";
 			sourceTree = "<group>";
@@ -255,7 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C4A8EBD251496BD00292028 /* NotificationController.swift in Sources */,
+				8C4A8ED425149DEA00292028 /* Convert.swift in Sources */,
 				8C4A8EBB251496BD00292028 /* ExtensionDelegate.swift in Sources */,
+				8C4A8ED225149D6B00292028 /* GlobalData.swift in Sources */,
+				8C44B3142514A8AE00B0BB1D /* CountriesData.swift in Sources */,
 				8C4A8EB9251496BD00292028 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
