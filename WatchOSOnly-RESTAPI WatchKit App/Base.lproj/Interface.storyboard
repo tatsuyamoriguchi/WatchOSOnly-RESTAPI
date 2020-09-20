@@ -9,9 +9,52 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchOSOnly_RESTAPI_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchOSOnly_RESTAPI_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Add New" id="4qk-LV-tu3">
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <table alignment="left" id="tpR-Wi-meA">
+                            <items>
+                                <tableRow identifier="RowController" id="zzU-Sd-19H" customClass="RowController" customModule="WatchOSOnly_RESTAPI_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="cG6-Ey-4jk">
+                                        <items>
+                                            <label width="130" height="38" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="m3f-7t-ABA">
+                                                <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.6705882353" green="0.98823529409999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowLabel" destination="m3f-7t-ABA" id="cAM-Q5-DLz"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="tpR-Wi-meA" id="gnV-cv-Ww0"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--DetailInterfaceController-->
+        <scene sceneID="ZWi-W3-9CU">
+            <objects>
+                <controller identifier="DetailInterfaceController" id="E8D-1u-LoI" customClass="DetailInterfaceController" customModule="WatchOSOnly_RESTAPI_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="155" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="34U-b4-WCj">
+                            <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="0.6705882353" green="0.98823529409999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="detailLabel" destination="34U-b4-WCj" id="QE1-bk-bDw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="489" y="333"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
