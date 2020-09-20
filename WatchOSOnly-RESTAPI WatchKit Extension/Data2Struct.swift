@@ -8,10 +8,6 @@
 
 import Foundation
 
-//struct Wrapper {
-//    let toDoItems: [UserResponseModel]
-//}
-
 struct UserResponseModel: Codable {
     var userId: Int
     var id: Int

@@ -17,15 +17,14 @@ class InterfaceController: WKInterfaceController {
     
     let url = URL(string: "https://jsonplaceholder.typicode.com/todos")
     
-    let tableData = ["One", "Two", "Three", "Four", "Five", "Six"]
-    
+    //let tableData = ["One", "Two", "Three", "Four", "Five", "Six"]
+    var tableData = [String]()
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         requestGet()
-        loadTableData()
-
+        //loadTableData()
        
     }
 
@@ -49,22 +48,37 @@ class InterfaceController: WKInterfaceController {
             if let data = data, let dataString = String(data: data, encoding: .utf8) {
                 print("Response data string: \n \(dataString)")
                 
+//                let todoItems = self.parseJSON(data: data)!
+//                //self.tableData = self.parseJSON(data: data)!
+//
+//                guard let todoItemModel = todoItems else { return }
+//                //guard let todoItemModel = self.tableData else { return }
+//
+//                for toDo in self.tableData {
+//                    print(toDo.self)
+//                }
+                
                 let todoItem = self.parseJSON(data: data)
+               
                 guard let todoItemModel = todoItem else { return }
                 
                 for toDo in todoItemModel {
                     print(toDo.title)
+                    self.tableData.append(toDo.title)
                     
                 }
                 
-                
-                //print("todo item title = \(todoItemModel.title)")
+                DispatchQueue.main.async {
+                    self.loadTableData()
+                }
+
             }
         }
         task.resume()
 
     }
-
+    
+    
     func parseJSON(data: Data) -> [UserResponseModel]? {
         var returnValue: [UserResponseModel]?
         
@@ -76,6 +90,7 @@ class InterfaceController: WKInterfaceController {
         }
         return returnValue
     }
+    
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
@@ -87,18 +102,24 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
+    //let todoItems: Array<Any> = []
     
     private func loadTableData() {
-        
+              
         tableView.setNumberOfRows(tableData.count, withRowType: "RowController")
         
         for (index, rowModel) in tableData.enumerated() {
-            
+
             if let rowController = tableView.rowController(at: index) as? RowController {
                 rowController.rowLabel.setText(rowModel)
             }
         }
-        
+
+//        for (index, rowModel) in todoItems?.enumerated(){
+//            if let rowController = tableView.rowController(at: index) as? RowController {
+//                RowController.rowLabel.setText(rowModel)
+//            }
+//        }
         
     }
     
