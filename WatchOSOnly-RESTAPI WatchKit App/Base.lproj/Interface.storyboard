@@ -13,13 +13,16 @@
                     <items>
                         <button width="1" alignment="left" title="Add New" id="4qk-LV-tu3">
                             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Zn7-Em-U87" kind="push" id="Zlj-8c-f8n"/>
+                            </connections>
                         </button>
                         <table alignment="left" id="tpR-Wi-meA">
                             <items>
                                 <tableRow identifier="RowController" id="zzU-Sd-19H" customClass="RowController" customModule="WatchOSOnly_RESTAPI_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="cG6-Ey-4jk">
                                         <items>
-                                            <label width="130" height="38" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="m3f-7t-ABA">
+                                            <label width="130" height="38" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="0" id="m3f-7t-ABA">
                                                 <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
                                         </items>
@@ -39,12 +42,19 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
+        <!--Add Interface Controller-->
+        <scene sceneID="pRt-vQ-3gd">
+            <objects>
+                <controller id="Zn7-Em-U87" customClass="AddInterfaceController" customModule="WatchOSOnly_RESTAPI_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="479" y="26"/>
+        </scene>
         <!--DetailInterfaceController-->
         <scene sceneID="ZWi-W3-9CU">
             <objects>
                 <controller identifier="DetailInterfaceController" id="E8D-1u-LoI" customClass="DetailInterfaceController" customModule="WatchOSOnly_RESTAPI_WatchKit_Extension">
                     <items>
-                        <label width="136" height="155" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="34U-b4-WCj">
+                        <label width="136" height="154" alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="34U-b4-WCj">
                             <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </label>
                     </items>

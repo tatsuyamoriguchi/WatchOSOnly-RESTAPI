@@ -18,6 +18,7 @@ class DetailInterfaceController: WKInterfaceController {
         
         if let detailData = context as? String {
             detailLabel.setText(detailData)
+            
         }
     }
     

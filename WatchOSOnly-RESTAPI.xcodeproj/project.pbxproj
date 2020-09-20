@@ -14,6 +14,7 @@
 		8C4A8EBB251496BD00292028 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4A8EBA251496BD00292028 /* ExtensionDelegate.swift */; };
 		8C4A8EBD251496BD00292028 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4A8EBC251496BD00292028 /* NotificationController.swift */; };
 		8C4A8EBF251496BD00292028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4A8EBE251496BD00292028 /* Assets.xcassets */; };
+		8C6BB7CD2517D3F9009D279E /* AddInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6BB7CC2517D3F9009D279E /* AddInterfaceController.swift */; };
 		8C6FB76A2516E8F80052B070 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6FB7692516E8F80052B070 /* RowController.swift */; };
 		8C6FB76C2516F6D50052B070 /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6FB76B2516F6D50052B070 /* DetailInterfaceController.swift */; };
 		8CDEE5F22515779E00E150E8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEE5F12515779E00E150E8 /* InterfaceController.swift */; };
@@ -74,6 +75,7 @@
 		8C4A8EBE251496BD00292028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C4A8EC0251496BD00292028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C4A8EC1251496BD00292028 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8C6BB7CC2517D3F9009D279E /* AddInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInterfaceController.swift; sourceTree = "<group>"; };
 		8C6FB7692516E8F80052B070 /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
 		8C6FB76B2516F6D50052B070 /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 		8CDEE5F12515779E00E150E8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				8CDEE5F32515A20100E150E8 /* Data2Struct.swift */,
 				8C6FB7692516E8F80052B070 /* RowController.swift */,
 				8C6FB76B2516F6D50052B070 /* DetailInterfaceController.swift */,
+				8C6BB7CC2517D3F9009D279E /* AddInterfaceController.swift */,
 			);
 			path = "WatchOSOnly-RESTAPI WatchKit Extension";
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C6FB76C2516F6D50052B070 /* DetailInterfaceController.swift in Sources */,
+				8C6BB7CD2517D3F9009D279E /* AddInterfaceController.swift in Sources */,
 				8C6FB76A2516E8F80052B070 /* RowController.swift in Sources */,
 				8C4A8EBD251496BD00292028 /* NotificationController.swift in Sources */,
 				8CDEE5F42515A20100E150E8 /* Data2Struct.swift in Sources */,
