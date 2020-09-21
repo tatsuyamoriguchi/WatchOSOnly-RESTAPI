@@ -11,13 +11,22 @@ import WatchKit
 
 class DetailInterfaceController: WKInterfaceController {
     
-    @IBOutlet weak var detailLabel: WKInterfaceLabel!
+    
+    @IBOutlet weak var idLabel: WKInterfaceLabel!
+    @IBOutlet weak var userIDLabel: WKInterfaceLabel!
+    @IBOutlet weak var completedLabel: WKInterfaceLabel!
+    @IBOutlet weak var todoLabel: WKInterfaceLabel!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         if let detailData = context as? String {
-            detailLabel.setText(detailData)
+        
+            //let idString = String(detailData.)
+            //idLabel.setText()
+            todoLabel.setText(detailData)
+            
+            
             
         }
     }

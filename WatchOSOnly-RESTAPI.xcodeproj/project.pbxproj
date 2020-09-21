@@ -126,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				8CDEE5F12515779E00E150E8 /* InterfaceController.swift */,
+				8C6FB76B2516F6D50052B070 /* DetailInterfaceController.swift */,
 				8C4A8EBA251496BD00292028 /* ExtensionDelegate.swift */,
 				8C4A8EBC251496BD00292028 /* NotificationController.swift */,
 				8C4A8EBE251496BD00292028 /* Assets.xcassets */,
@@ -133,7 +134,6 @@
 				8C4A8EC1251496BD00292028 /* PushNotificationPayload.apns */,
 				8CDEE5F32515A20100E150E8 /* Data2Struct.swift */,
 				8C6FB7692516E8F80052B070 /* RowController.swift */,
-				8C6FB76B2516F6D50052B070 /* DetailInterfaceController.swift */,
 				8C6BB7CC2517D3F9009D279E /* AddInterfaceController.swift */,
 			);
 			path = "WatchOSOnly-RESTAPI WatchKit Extension";

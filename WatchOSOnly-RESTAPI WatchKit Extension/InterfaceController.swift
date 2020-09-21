@@ -19,6 +19,10 @@ class InterfaceController: WKInterfaceController {
     
     //let tableData = ["One", "Two", "Three", "Four", "Five", "Six"]
     var tableData = [String]()
+    var tableData2 = [Bool]()
+    var todoItemModel = [Any]()
+    
+    
     
     
     override func awake(withContext context: Any?) {
@@ -64,8 +68,9 @@ class InterfaceController: WKInterfaceController {
                 guard let todoItemModel = todoItem else { return }
                 
                 for toDo in todoItemModel {
-                    print(toDo.title)
+                    //print(toDo.title)
                     self.tableData.append(toDo.title)
+                    self.tableData2.append(toDo.completed)
                     
                 }
                 
@@ -126,6 +131,7 @@ class InterfaceController: WKInterfaceController {
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         pushController(withName: "DetailInterfaceController", context: tableData[rowIndex])
+        
     }
 
 }

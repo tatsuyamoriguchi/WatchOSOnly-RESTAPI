@@ -45,22 +45,47 @@
         <!--Add Interface Controller-->
         <scene sceneID="pRt-vQ-3gd">
             <objects>
-                <controller id="Zn7-Em-U87" customClass="AddInterfaceController" customModule="WatchOSOnly_RESTAPI_WatchKit_Extension"/>
+                <controller id="Zn7-Em-U87" customClass="AddInterfaceController" customModule="WatchOSOnly_RESTAPI_WatchKit_Extension">
+                    <items>
+                        <label width="127" alignment="left" text="Label" id="2vG-IP-aMW"/>
+                        <label width="127" alignment="left" text="Label" id="n5b-Rv-mFJ"/>
+                        <label width="127" alignment="left" text="Label" id="1Bu-oA-Rdu"/>
+                        <label width="127" height="93" alignment="left" text="Label" id="6cY-Re-Y1G"/>
+                    </items>
+                    <connections>
+                        <outlet property="completedLabel" destination="1Bu-oA-Rdu" id="cTv-Xs-tEj"/>
+                        <outlet property="idLabel" destination="2vG-IP-aMW" id="UuZ-lX-1Zn"/>
+                        <outlet property="todoLabel" destination="6cY-Re-Y1G" id="Fot-Du-xsg"/>
+                        <outlet property="userIDLabel" destination="n5b-Rv-mFJ" id="gkf-hr-bz9"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="479" y="26"/>
+            <point key="canvasLocation" x="479" y="32.5"/>
         </scene>
         <!--DetailInterfaceController-->
         <scene sceneID="ZWi-W3-9CU">
             <objects>
                 <controller identifier="DetailInterfaceController" id="E8D-1u-LoI" customClass="DetailInterfaceController" customModule="WatchOSOnly_RESTAPI_WatchKit_Extension">
                     <items>
-                        <label width="136" height="154" alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="34U-b4-WCj">
+                        <label width="136" height="20" alignment="center" textAlignment="left" numberOfLines="0" id="34U-b4-WCj">
+                            <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label width="136" height="20" alignment="center" textAlignment="left" numberOfLines="0" id="hff-7J-UTD">
+                            <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label width="136" height="20" alignment="center" textAlignment="left" numberOfLines="0" id="BtE-yQ-cmb">
+                            <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <label width="136" height="78" alignment="center" text="Label" textAlignment="left" numberOfLines="0" id="byg-j5-O6v">
                             <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </label>
                     </items>
                     <color key="backgroundColor" red="0.6705882353" green="0.98823529409999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
-                        <outlet property="detailLabel" destination="34U-b4-WCj" id="QE1-bk-bDw"/>
+                        <outlet property="completedLabel" destination="BtE-yQ-cmb" id="O32-ta-Sf4"/>
+                        <outlet property="idLabel" destination="34U-b4-WCj" id="DIG-V1-wAr"/>
+                        <outlet property="todoLabel" destination="byg-j5-O6v" id="Pqe-iF-CpJ"/>
+                        <outlet property="userIDLabel" destination="hff-7J-UTD" id="LMz-mi-1JF"/>
                     </connections>
                 </controller>
             </objects>
